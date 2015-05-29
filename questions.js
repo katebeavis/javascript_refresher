@@ -6,7 +6,12 @@ var selectElementsStartingWithA = function(array) {
 };
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  function startWithVowel(word) {
+    var firstLetter = word.charAt(0);
+    return vowels.indexOf(firstLetter) !== -1;
+  }
+  return array.filter(startWithVowel);
 };
 
 var removeNullElements = function(array) {
