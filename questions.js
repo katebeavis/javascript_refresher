@@ -15,7 +15,10 @@ var selectElementsStartingWithVowel = function(array) {
 };
 
 var removeNullElements = function(array) {
-  return 'Write your method here';
+  function removeNull(word) {
+    return word !== null;
+  }
+  return array.filter(removeNull);
 };
 
 var removeNullAndFalseElements = function(array) {
