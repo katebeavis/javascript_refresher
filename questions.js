@@ -94,7 +94,7 @@ var sumNumbers = function(array) {
 };
 
 var repeatElements = function(array) {
-  return 'Write your method here';
+  return array.concat(array);
 };
 
 var stringToNumber = function(string) {
