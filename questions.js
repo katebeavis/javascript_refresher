@@ -22,7 +22,10 @@ var removeNullElements = function(array) {
 };
 
 var removeNullAndFalseElements = function(array) {
-  return 'Write your method here';
+  function removeNullAndFalse(word) {
+    return word !== null && word !== false;
+  }
+  return array.filter(removeNullAndFalse);
 };
 
 var reverseWordsInArray = function(array) {
