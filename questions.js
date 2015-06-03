@@ -87,7 +87,10 @@ var longestWord = function(array) {
 };
 
 var sumNumbers = function(array) {
-  return 'Write your method here';
+  function addNumbers(a, b) {
+    return a += b;
+  }
+  return array.reduce(addNumbers, 0);
 };
 
 var repeatElements = function(array) {
