@@ -80,7 +80,10 @@ var shortestWord = function(array) {
 };
 
 var longestWord = function(array) {
-  return 'Write your method here';
+  function returnMax(a, b) {
+    return a.length > b.length ? a : b;
+  }
+  return array.reduce(returnMax);
 };
 
 var sumNumbers = function(array) {
