@@ -60,7 +60,7 @@ var getFirstHalf = function(string) {
 };
 
 var makeNegative = function(number) {
-  return 'Write your method here';
+  return Math.abs(number) * -1;
 };
 
 var numberOfPalindromes = function(array) {
