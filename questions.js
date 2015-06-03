@@ -106,7 +106,8 @@ var calculateAverage = function(array) {
 };
 
 var getElementsUntilGreaterThanFive = function(array) {
-  return 'Write your method here';
+  var a = array.indexOf(6);
+  return array.splice(0, a);
 };
 
 var convertArrayToObject = function(array) {
