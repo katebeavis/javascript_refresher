@@ -40,7 +40,7 @@ var everyPossiblePair = function(array) {
 };
 
 var allElementsExceptFirstThree = function(array) {
-  return 'Write your method here';
+  return array.slice(3,8);
 };
 
 var addElementToBeginning = function(array, element) {
