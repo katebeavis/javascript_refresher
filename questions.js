@@ -64,7 +64,12 @@ var makeNegative = function(number) {
 };
 
 var numberOfPalindromes = function(array) {
-  return 'Write your method here';
+  function numberMatches(word) {
+    if (word[0] === word.slice(-1)) {
+     return word;
+   }
+  }
+  return array.filter(numberMatches).length;
 };
 
 var shortestWord = function(array) {
