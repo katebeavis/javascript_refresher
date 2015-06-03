@@ -49,7 +49,10 @@ var addElementToBeginning = function(array, element) {
 };
 
 var sortByLastLetter = function(array) {
-  return 'Write your method here';
+  function sortLastLetter(word1, word2) {
+    return word1.slice(-1) > word2.slice(-1);
+  }
+  return array.sort(sortLastLetter);
 };
 
 var getFirstHalf = function(string) {
