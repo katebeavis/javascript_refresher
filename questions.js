@@ -29,7 +29,10 @@ var removeNullAndFalseElements = function(array) {
 };
 
 var reverseWordsInArray = function(array) {
-  return 'Write your method here';
+  function reverseWords(word) {
+    return word.split("").reverse().join("");
+  }
+  return array.map(reverseWords);
 };
 
 var everyPossiblePair = function(array) {
