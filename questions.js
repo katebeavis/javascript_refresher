@@ -40,7 +40,7 @@ var everyPossiblePair = function(array) {
 };
 
 var allElementsExceptFirstThree = function(array) {
-  return array.slice(3,8);
+  return array.slice(3, 8);
 };
 
 var addElementToBeginning = function(array, element) {
@@ -56,7 +56,7 @@ var sortByLastLetter = function(array) {
 };
 
 var getFirstHalf = function(string) {
-  return 'Write your method here';
+  return string.slice(0, 3);
 };
 
 var makeNegative = function(number) {
