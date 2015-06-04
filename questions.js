@@ -155,7 +155,8 @@ var formatDateNicely = function(date) {
 };
 
 var getDomainName = function(string) {
-  return 'Write your method here';
+  var patternMatch = /^.+@(.+)\..+$/
+  return string.match(patternMatch)[1];
 };
 
 var titleize = function(string) {
