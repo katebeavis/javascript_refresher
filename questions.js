@@ -119,7 +119,12 @@ var convertArrayToObject = function(array) {
 };
 
 var getAllLetters = function(array) {
-  return 'Write your method here';
+  function onlyUnique(arr, letter) {
+    if (arr.indexOf(letter) === -1) arr.push(letter); {
+      return arr;
+    }
+  }
+  return array.join("").split("").sort().reduce(onlyUnique, []);
 };
 
 var swapKeysAndValues = function(object) {
