@@ -140,7 +140,10 @@ var sumKeysAndValues = function(object) {
 };
 
 var removeCapitals = function(string) {
-  return 'Write your method here';
+  function isCapital(letter) {
+    return ((letter === letter.toLowerCase() ? true : false));
+  }
+  return string.split("").filter(isCapital).join("");
 };
 
 var roundUp = function(number) {
