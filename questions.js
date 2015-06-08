@@ -197,7 +197,7 @@ var findAnagrams = function(string) {
 };
 
 var convertToCelsius = function(number) {
-  return 'Write your method here';
+  return Math.round((number - 32) / 1.8);
 };
 
 var letterPosition = function(array) {
