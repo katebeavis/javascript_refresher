@@ -36,7 +36,15 @@ var reverseWordsInArray = function(array) {
 };
 
 var everyPossiblePair = function(array) {
-  return 'Write your method here';
+  newArray = [];
+  var arrayCopy = array.slice().reverse();
+  for (var pair1 of array) {
+    arrayCopy.pop();
+    for (var pair2 of arrayCopy) {
+      newArray.push([pair1, pair2].sort());
+    }
+  }
+  return newArray.sort();
 };
 
 var allElementsExceptFirstThree = function(array) {
