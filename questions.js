@@ -151,7 +151,8 @@ var roundUp = function(number) {
 };
 
 var formatDateNicely = function(date) {
-  return 'Write your method here';
+  var myDate = date
+  return ("0" + myDate.getDate() + "/" + "0" + (myDate.getMonth() + 1) + "/" + myDate.getFullYear());
 };
 
 var getDomainName = function(string) {
@@ -160,7 +161,7 @@ var getDomainName = function(string) {
 };
 
 var titleize = function(string) {
-  return 'Write your method here';
+  return string[0].toUpperCase();
 };
 
 var checkForSpecialCharacters = function(string) {
