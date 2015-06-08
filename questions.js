@@ -201,5 +201,8 @@ var convertToCelsius = function(number) {
 };
 
 var letterPosition = function(array) {
-  return 'Write your method here';
+  function convertLetter(char) {
+    return char.toLowerCase().charCodeAt(0) - 96;
+  }
+  return array.map(convertLetter);
 };
