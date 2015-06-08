@@ -161,11 +161,22 @@ var getDomainName = function(string) {
 };
 
 var titleize = function(string) {
-  return string[0].toUpperCase();
+  return string.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+  return string;
 };
 
 var checkForSpecialCharacters = function(string) {
-  return 'Write your method here';
+  function containsSpecial(character) {
+    var code = character.charCodeAt(0);
+    if (code < 48 || code > 122 ) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+  return !(string.split("").every(containsSpecial));
 };
 
 var squareRoot = function(number) {
